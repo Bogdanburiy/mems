@@ -40,6 +40,8 @@ body {
 }
 .fill-btn span svg {
   position: absolute;
+  top: 50%;
+  transform: translateY(-50%);
   right: 5px;
   transition: all 0.3s ease-out;
 }

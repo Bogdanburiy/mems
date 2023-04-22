@@ -53,6 +53,8 @@ body {
         transition: 0.3s ease-out;
         svg {
             position: absolute;
+            top: 50%;
+            transform: translateY(-50%);
             right: 5px;
             transition: all .3s ease-out;
             path {
