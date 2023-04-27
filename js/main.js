@@ -37,6 +37,28 @@ $(document).ready(function () {
       centerMode: true,
       prevArrow: $(".arrows-mems__prev"),
       nextArrow: $(".arrows-mems__next"),
+      responsive: [{
+          breakpoint: 1024,
+          settings: {
+            slidesToShow: 2,
+            slidesToScroll: 2,
+          }
+        },
+        {
+          breakpoint: 600,
+          settings: {
+            slidesToShow: 2,
+            slidesToScroll: 2
+          }
+        },
+        {
+          breakpoint: 480,
+          settings: {
+            slidesToShow: 2,
+            slidesToScroll: 2
+          }
+        }
+      ]
     });
 
     // Project main page slick start
@@ -56,6 +78,21 @@ $(document).ready(function () {
     arrows: false,
     prevArrow: $(".intro-prev"),
     nextArrow: $(".intro-next"),
+    responsive: [{
+        breakpoint: 1200,
+        settings: {
+          slidesToShow: 1,
+          slidesToScroll: 1,
+        }
+      },
+      {
+        breakpoint: 768,
+        settings: {
+          slidesToShow: 2,
+          slidesToScroll: 2
+        }
+      },
+    ]
   });
 
   $(function () {
@@ -105,4 +142,13 @@ $(document).ready(function () {
   })();
 
   inputNumber($(".input-number"));
+
+  // Fixed header
+  $(window).scroll(function () {
+    if ($(this).scrollTop() > 55) {
+      $(".header-bottom").addClass("fixed");
+    } else {
+      $(".header-bottom").removeClass("fixed");
+    }
+  });
 });

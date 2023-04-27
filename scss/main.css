@@ -93,7 +93,7 @@ body {
     right: 5px;
   }
 }
-.big-title, .contact-heading .section-title, .about .section-title {
+.big-title, .contact-heading .section-title, .mems .section-title, .about .section-title {
   font-family: "Alfa Slab One";
   margin: 0;
   font-style: normal;
@@ -106,7 +106,7 @@ body {
   -webkit-text-fill-color: transparent;
   background-clip: text;
 }
-.big-title span, .contact-heading .section-title span, .about .section-title span {
+.big-title span, .contact-heading .section-title span, .mems .section-title span, .about .section-title span {
   display: block;
   color: #231F1F;
   background: none;
@@ -116,6 +116,9 @@ body {
 .header-top {
   padding: 15px 0;
   border-bottom: 1px solid #D9D9D9;
+}
+.header-top a.fill-btn {
+  display: none;
 }
 .header-bottom {
   padding: 20px 0;
@@ -192,10 +195,10 @@ body {
   height: 100%;
   z-index: 3;
 }
-.intro-heading .big-title, .intro-heading .contact-heading .section-title, .contact-heading .intro-heading .section-title, .intro-heading .about .section-title, .about .intro-heading .section-title {
+.intro-heading .big-title, .intro-heading .contact-heading .section-title, .contact-heading .intro-heading .section-title, .intro-heading .mems .section-title, .mems .intro-heading .section-title, .intro-heading .about .section-title, .about .intro-heading .section-title {
   margin-bottom: 20px;
 }
-.intro-heading .big-title span, .intro-heading .contact-heading .section-title span, .contact-heading .intro-heading .section-title span, .intro-heading .about .section-title span, .about .intro-heading .section-title span {
+.intro-heading .big-title span, .intro-heading .contact-heading .section-title span, .contact-heading .intro-heading .section-title span, .intro-heading .mems .section-title span, .mems .intro-heading .section-title span, .intro-heading .about .section-title span, .about .intro-heading .section-title span {
   display: block;
 }
 .intro-heading p {
@@ -226,9 +229,11 @@ body {
   padding-left: 60px;
 }
 .intro-heading__adv ul li {
+  position: relative;
   display: flex;
   align-items: center;
   margin-right: 100px;
+  padding-left: 65px;
   color: #231F1F;
   font-style: normal;
   font-weight: 700;
@@ -240,6 +245,10 @@ body {
   margin-right: 0;
 }
 .intro-heading__adv ul li i.icon {
+  position: absolute;
+  top: 50%;
+  transform: translateY(-50%);
+  left: 0;
   display: flex;
   align-items: center;
   justify-content: center;
@@ -385,8 +394,13 @@ body {
   padding: 100px 0;
   overflow: hidden;
 }
-.mems h2 {
+.mems .section-title {
   margin-bottom: 30px;
+  background: none;
+  -webkit-text-fill-color: #693ABB;
+  color: #693ABB;
+  font-size: 42px;
+  line-height: 60px;
 }
 .mems p {
   max-width: 660px;
@@ -510,13 +524,13 @@ body {
   justify-content: center;
   height: 100%;
 }
-.collection-content .big-title, .collection-content .contact-heading .section-title, .contact-heading .collection-content .section-title, .collection-content .about .section-title, .about .collection-content .section-title {
+.collection-content .big-title, .collection-content .contact-heading .section-title, .contact-heading .collection-content .section-title, .collection-content .about .section-title, .about .collection-content .section-title, .collection-content .mems .section-title, .mems .collection-content .section-title {
   margin-bottom: 20px;
   color: #fff;
   background: none;
   -webkit-text-fill-color: #fff;
 }
-.collection-content .big-title span, .collection-content .contact-heading .section-title span, .contact-heading .collection-content .section-title span, .collection-content .about .section-title span, .about .collection-content .section-title span {
+.collection-content .big-title span, .collection-content .contact-heading .section-title span, .contact-heading .collection-content .section-title span, .collection-content .about .section-title span, .about .collection-content .section-title span, .collection-content .mems .section-title span, .mems .collection-content .section-title span {
   color: #DA2582;
   background: none;
   -webkit-text-fill-color: #DA2582;
@@ -545,10 +559,10 @@ body {
 .important {
   padding: 100px 0;
 }
-.important .big-title, .important .contact-heading .section-title, .contact-heading .important .section-title, .important .about .section-title, .about .important .section-title {
+.important .big-title, .important .contact-heading .section-title, .contact-heading .important .section-title, .important .about .section-title, .about .important .section-title, .important .mems .section-title, .mems .important .section-title {
   margin-bottom: 20px;
 }
-.important .big-title span, .important .contact-heading .section-title span, .contact-heading .important .section-title span, .important .about .section-title span, .about .important .section-title span {
+.important .big-title span, .important .contact-heading .section-title span, .contact-heading .important .section-title span, .important .about .section-title span, .about .important .section-title span, .important .mems .section-title span, .mems .important .section-title span {
   display: inline-block;
 }
 .important p {
@@ -797,10 +811,10 @@ body {
   position: relative;
   padding: 50px 0 100px 0;
 }
-.mint-page .big-title, .mint-page .about .section-title, .about .mint-page .section-title, .mint-page .contact-heading .section-title, .contact-heading .mint-page .section-title {
+.mint-page .big-title, .mint-page .about .section-title, .about .mint-page .section-title, .mint-page .mems .section-title, .mems .mint-page .section-title, .mint-page .contact-heading .section-title, .contact-heading .mint-page .section-title {
   margin-bottom: 20px;
 }
-.mint-page .big-title span, .mint-page .about .section-title span, .about .mint-page .section-title span, .mint-page .contact-heading .section-title span, .contact-heading .mint-page .section-title span {
+.mint-page .big-title span, .mint-page .about .section-title span, .about .mint-page .section-title span, .mint-page .mems .section-title span, .mems .mint-page .section-title span, .mint-page .contact-heading .section-title span, .contact-heading .mint-page .section-title span {
   display: inline-block;
 }
 .mint-page p.subtitle {
@@ -822,6 +836,7 @@ body {
   display: flex;
 }
 .mint-page__adv ul li {
+  position: relative;
   display: flex;
   align-items: center;
   margin-right: 30px;
@@ -831,11 +846,16 @@ body {
   font-size: 18px;
   line-height: 21px;
   text-transform: capitalize;
+  padding-left: 65px;
 }
 .mint-page__adv ul li:last-child {
   margin-right: 0;
 }
 .mint-page__adv ul li i.icon {
+  position: absolute;
+  top: 50%;
+  transform: translateY(-50%);
+  left: 0;
   display: flex;
   align-items: center;
   justify-content: center;
@@ -957,4 +977,513 @@ body {
   width: fit-content;
   margin-bottom: 30px;
   text-transform: capitalize;
+}
+
+@media only screen and (max-width: 576px) {
+  .header-top {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+  }
+  .header-top a img {
+    width: 100px;
+  }
+  .header-top a.fill-btn {
+    display: flex;
+    padding: 10px 20px;
+    font-size: 16px;
+    line-height: 24px;
+  }
+  .header-bottom {
+    padding-bottom: 0;
+  }
+  .header-bottom__row a.fill-btn {
+    display: none;
+  }
+  .header-bottom__nav ul {
+    display: flex;
+    align-items: center;
+    flex-wrap: wrap;
+    justify-content: flex-start;
+  }
+  .header-bottom__nav ul li {
+    margin-right: 15px;
+  }
+  .header-bottom__nav ul li a {
+    font-size: 18px;
+    line-height: 26px;
+  }
+  .big-title, .about .section-title, .mems .section-title, .contact-heading .section-title {
+    font-size: 50px;
+    line-height: 68px;
+  }
+  .intro-heading p {
+    font-size: 16px;
+    line-height: 24px;
+  }
+  .intro-heading__adv ul:nth-of-type(1) {
+    margin-bottom: 20px;
+    padding-left: 0;
+  }
+  .intro-heading__adv ul li {
+    width: 160px;
+    margin-right: 30px;
+    font-size: 16px;
+    line-height: 21px;
+  }
+  .intro-carousel__slides {
+    margin-top: 30px;
+  }
+  .intro-carousel__slides .carousel-card {
+    height: 280px;
+  }
+  .intro-carousel__slides .carousel-card::after {
+    right: -10px;
+    bottom: -10px;
+  }
+  .intro-carousel__nav ul {
+    width: 100px;
+    height: 50px;
+  }
+  .intro-carousel__nav {
+    position: absolute;
+    bottom: 45px;
+  }
+  .intro {
+    margin-bottom: 50px;
+  }
+  .about {
+    padding: 50px 0;
+  }
+  .about .section-title {
+    font-size: 26px;
+    line-height: 38px;
+  }
+  .about p {
+    font-size: 16px;
+    line-height: 24px;
+  }
+  .mems {
+    padding: 50px 0;
+  }
+  .mems p {
+    margin-bottom: 30px;
+    font-size: 16px;
+    line-height: 24px;
+  }
+  .mems-carousel__item {
+    margin: 0 5px;
+    padding: 5px;
+  }
+  .mems-carousel__nav {
+    margin-top: 15px;
+  }
+  .mems .section-title {
+    font-size: 26px;
+    line-height: 38px;
+  }
+  .collection {
+    padding: 50px 0 70px 0;
+  }
+  .collection-mems__ill {
+    height: 240px;
+  }
+  .collection-content {
+    margin-top: 30px;
+  }
+  .collection-content .big-title, .collection-content .about .section-title, .about .collection-content .section-title, .collection-content .mems .section-title, .mems .collection-content .section-title, .collection-content .contact-heading .section-title, .contact-heading .collection-content .section-title {
+    font-size: 36px;
+    line-height: 50px;
+  }
+  .collection-content p {
+    font-size: 16px;
+    line-height: 24px;
+  }
+  .important {
+    padding: 50px 0 20px 0;
+  }
+  .important .big-title, .important .about .section-title, .about .important .section-title, .important .mems .section-title, .mems .important .section-title, .important .contact-heading .section-title, .contact-heading .important .section-title {
+    font-size: 36px;
+    line-height: 50px;
+  }
+  .important p {
+    font-size: 16px;
+    line-height: 24px;
+  }
+  .important-card {
+    min-height: 280px;
+    margin-bottom: 30px;
+  }
+  .important .fill-btn {
+    margin-top: 30px;
+    margin-bottom: 30px;
+  }
+  .contact {
+    padding: 50px 0;
+  }
+  .contact .section-title {
+    font-size: 34px;
+    line-height: 48px;
+  }
+  .contact-heading p {
+    font-size: 16px;
+    line-height: 24px;
+  }
+  .contact-heading__social {
+    margin-top: 30px;
+    margin-bottom: 30px;
+  }
+  .contact-heading__social ul li a {
+    font-size: 18px;
+    line-height: 28px;
+  }
+  .contact-heading__social ul li::after {
+    margin: 0 10px;
+  }
+  footer {
+    padding: 30px 0;
+  }
+  .footer-row {
+    align-items: flex-start;
+    justify-content: center;
+    flex-direction: column;
+  }
+  .footer-nav {
+    margin: 30px 0;
+  }
+  .footer-nav ul {
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    grid-row-gap: 15px;
+    align-items: center;
+  }
+  .mint-page__desc {
+    margin-top: 30px;
+    padding-left: 0;
+  }
+  .mint-page__desc p {
+    font-size: 16px;
+    line-height: 24px;
+  }
+  .mint-page .big-title, .mint-page .about .section-title, .about .mint-page .section-title, .mint-page .mems .section-title, .mems .mint-page .section-title, .mint-page .contact-heading .section-title, .contact-heading .mint-page .section-title {
+    font-size: 38px;
+    line-height: 50px;
+  }
+  .mint-page p.subtitle {
+    font-size: 16px;
+    line-height: 24px;
+  }
+  .mint-page {
+    padding: 50px 0 70px 0;
+  }
+}
+@media only screen and (max-width: 768px) {
+  .header-top {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+  }
+  .header-top a img {
+    width: 100px;
+  }
+  .header-top a.fill-btn {
+    display: flex;
+    padding: 10px 20px;
+    font-size: 16px;
+    line-height: 24px;
+  }
+  .header-bottom {
+    padding-bottom: 0;
+  }
+  .header-bottom__row a.fill-btn {
+    display: none;
+  }
+  .header-bottom__nav ul {
+    display: flex;
+    align-items: center;
+    flex-wrap: wrap;
+    justify-content: flex-start;
+  }
+  .header-bottom__nav ul li {
+    margin-right: 15px;
+  }
+  .header-bottom__nav ul li a {
+    font-size: 18px;
+    line-height: 26px;
+  }
+  .big-title, .about .section-title, .mems .section-title, .contact-heading .section-title {
+    font-size: 50px;
+    line-height: 68px;
+  }
+  .intro-heading__adv ul li {
+    width: 160px;
+    margin-right: 30px;
+    font-size: 16px;
+    line-height: 21px;
+  }
+  .intro-carousel__slides {
+    margin-top: 30px;
+  }
+  .intro-carousel__slides .carousel-card {
+    height: 320px;
+  }
+  .intro-carousel__slides .carousel-card::after {
+    right: -10px;
+    bottom: -10px;
+  }
+  .intro-carousel__nav ul {
+    width: 100px;
+    height: 50px;
+  }
+  .intro-carousel__nav {
+    position: absolute;
+    bottom: 45px;
+  }
+  .intro {
+    margin-bottom: 50px;
+  }
+  .about {
+    padding: 50px 0;
+  }
+  .about .section-title {
+    font-size: 30px;
+    line-height: 40px;
+  }
+  .about .section-title br {
+    display: none;
+  }
+  .mems {
+    padding: 50px 0;
+  }
+  .mems p {
+    margin-bottom: 30px;
+  }
+  .mems-carousel__item {
+    margin: 0 5px;
+    padding: 5px;
+  }
+  .mems-carousel__nav {
+    margin-top: 15px;
+  }
+  .mems .section-title {
+    font-size: 30px;
+    line-height: 40px;
+  }
+  .collection {
+    padding: 50px 0 70px 0;
+  }
+  .collection-mems__ill {
+    height: 240px;
+  }
+  .collection-content {
+    margin-top: 30px;
+  }
+  .collection-content .big-title, .collection-content .about .section-title, .about .collection-content .section-title, .collection-content .mems .section-title, .mems .collection-content .section-title, .collection-content .contact-heading .section-title, .contact-heading .collection-content .section-title {
+    font-size: 36px;
+    line-height: 50px;
+  }
+  .important {
+    padding: 50px 0 20px 0;
+  }
+  .important .big-title, .important .about .section-title, .about .important .section-title, .important .mems .section-title, .mems .important .section-title, .important .contact-heading .section-title, .contact-heading .important .section-title {
+    font-size: 36px;
+    line-height: 50px;
+  }
+  .important-card {
+    min-height: 280px;
+    margin-bottom: 30px;
+  }
+  .important .fill-btn {
+    margin-top: 30px;
+    margin-bottom: 30px;
+  }
+  .contact {
+    padding: 50px 0;
+  }
+  .contact .section-title {
+    font-size: 34px;
+    line-height: 48px;
+  }
+  .contact-heading__social {
+    margin-top: 30px;
+    margin-bottom: 30px;
+  }
+  .contact-heading__social ul li a {
+    font-size: 18px;
+    line-height: 28px;
+  }
+  .contact-heading__social ul li::after {
+    margin: 0 10px;
+  }
+  footer {
+    padding: 30px 0;
+  }
+  .footer-row {
+    align-items: flex-start;
+    justify-content: center;
+    flex-direction: column;
+  }
+  .footer-nav {
+    margin: 30px 0;
+  }
+  .footer-nav ul {
+    display: grid;
+    grid-template-columns: 1fr;
+    grid-row-gap: 15px;
+    align-items: center;
+  }
+  .mint-page__desc {
+    margin-top: 30px;
+    padding-left: 0;
+  }
+}
+@media only screen and (max-width: 992px) {
+  .header-top {
+    padding: 20px 0;
+  }
+  .header-bottom__nav ul li {
+    margin-right: 20px;
+  }
+  .header-bottom__nav ul li a {
+    font-size: 16px;
+    line-height: 21px;
+  }
+  .header-bottom__row .fill-btn {
+    padding: 15px 20px;
+    font-size: 18px;
+    line-height: 26px;
+  }
+  .intro-heading .big-title, .intro-heading .about .section-title, .about .intro-heading .section-title, .intro-heading .mems .section-title, .mems .intro-heading .section-title, .intro-heading .contact-heading .section-title, .contact-heading .intro-heading .section-title {
+    font-size: 50px;
+    line-height: 65px;
+  }
+  .intro-heading p {
+    font-size: 17px;
+    line-height: 25px;
+  }
+  .intro-heading__adv ul:nth-of-type(1) {
+    padding-left: 0;
+  }
+  .intro-heading__adv ul li {
+    width: 140px;
+    margin-right: 30px;
+  }
+  .intro-carousel__nav {
+    left: -1px;
+    bottom: 14px;
+  }
+  .about .section-title br {
+    display: none;
+  }
+  .about .section-title {
+    font-size: 40px;
+    line-height: 60px;
+  }
+  .mems p {
+    font-size: 18px;
+  }
+  .collection-content .big-title, .collection-content .about .section-title, .about .collection-content .section-title, .collection-content .mems .section-title, .mems .collection-content .section-title, .collection-content .contact-heading .section-title, .contact-heading .collection-content .section-title {
+    font-size: 38px;
+    line-height: 55px;
+  }
+  .collection-mems__ill {
+    height: 210px;
+  }
+  .collection-content {
+    padding-left: 15px;
+  }
+  .collection-content p {
+    font-size: 17px;
+    line-height: 25px;
+  }
+  .important .big-title, .important .about .section-title, .about .important .section-title, .important .mems .section-title, .mems .important .section-title, .important .contact-heading .section-title, .contact-heading .important .section-title {
+    font-size: 50px;
+    line-height: 60px;
+  }
+  .important p {
+    margin-bottom: 30px;
+  }
+  .important-card__last {
+    margin-top: 30px;
+    min-height: 250px;
+  }
+  .important-card p {
+    margin-bottom: 0;
+  }
+  .important-card .strong {
+    font-size: 20px;
+    line-height: 28px;
+  }
+  .contact-heading .section-title {
+    font-size: 36px;
+    line-height: 50px;
+  }
+  .contact .contact-form {
+    padding-top: 80px;
+  }
+  .footer-row {
+    align-items: flex-start;
+    flex-direction: column;
+  }
+  .footer-nav {
+    margin: 30px 0;
+  }
+  .mint-page .big-title, .mint-page .about .section-title, .about .mint-page .section-title, .mint-page .mems .section-title, .mems .mint-page .section-title, .mint-page .contact-heading .section-title, .contact-heading .mint-page .section-title {
+    font-size: 50px;
+    line-height: 60px;
+  }
+  .mint-page__desc .strong {
+    font-size: 16px;
+    line-height: 26px;
+  }
+  .mint-page__desc p {
+    font-size: 16px;
+    line-height: 24px;
+  }
+  .mint-page__desc {
+    padding-left: 20px;
+  }
+  .mint-page__desc .count {
+    margin-bottom: 15px;
+    padding-bottom: 15px;
+    font-size: 18px;
+  }
+  .mint-page__desc .counter {
+    margin: 15px 0;
+    padding: 15px 0;
+  }
+  .mint-page__desc .mint-btn {
+    margin-bottom: 15px;
+  }
+}
+@media only screen and (max-width: 1200px) {
+  .intro-carousel {
+    padding-left: 50px;
+  }
+  .intro-carousel__nav {
+    left: 49px;
+    bottom: 39px;
+  }
+  .about .section-title {
+    font-size: 37px;
+    line-height: 50px;
+  }
+  .collection-content .big-title, .collection-content .about .section-title, .about .collection-content .section-title, .collection-content .mems .section-title, .mems .collection-content .section-title, .collection-content .contact-heading .section-title, .contact-heading .collection-content .section-title {
+    font-size: 46px;
+    line-height: 60px;
+  }
+  .collection-mems__ill {
+    height: 240px;
+  }
+  .important .big-title, .important .about .section-title, .about .important .section-title, .important .mems .section-title, .mems .important .section-title, .important .contact-heading .section-title, .contact-heading .important .section-title {
+    font-size: 56px;
+    line-height: 70px;
+  }
+  .important-card__count {
+    top: 25px;
+    left: 15px;
+  }
+  .important-card {
+    padding: 15px;
+  }
 }/*# sourceMappingURL=main.css.map */
